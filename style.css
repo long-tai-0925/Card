@@ -133,11 +133,11 @@ body {
 @media screen and (max-width: 768px) {
   /* 手機螢幕以下 */
   body {
-    padding: 40px;
+    padding: 20px;
   }
 
   .卡片 {
-    width: 100%;
+    width: 150%;
     margin: 20px 0;
   }
 
