@@ -8,19 +8,21 @@
 
 body {
     height: 100vh;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background-color: #121212;
     color: #ffffff;
     overflow-x: hidden;
+    padding-bottom: 50px; 
+    
 }
 
 .卡片 {
     width: 300px;
     height: min-content;
     padding: 30px;
-    margin: 0 15px;
+    margin: 100px auto;
     background: #1e1e1e;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
@@ -40,13 +42,14 @@ body {
 }
 
 .卡片:hover .頭像 img {
-    height: 200px;
+    height: 180px;
 }
 
 .卡片 .主角 h1 {
     color: #ffffff;
     font-size: 33px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .卡片 .主角 p {
@@ -86,8 +89,20 @@ body {
     background-color: #00aaff;
 }
 
-.卡片 .Youtube button {
-    background-color: #f40000;
+.卡片 .Facebook button {
+    background-color: #1877f2;
+}
+
+.卡片 .instagram button {
+    background-color: #ec613d;
+}
+
+.卡片 .Thread button {
+    background-color: #333333;
+}
+
+.卡片 .Line button {
+    background-color: #07B53B;
 }
 
 .卡片 .Discord button {
@@ -98,46 +113,41 @@ body {
     background-color: #179cf0;
 }
 
+.卡片 .Youtube button {
+    background-color: #f40000;
+}
+
 .卡片 .Twitch button {
     background-color: #9046ff;
 }
 
-.卡片 .Facebook button {
-    background-color: #1877f2;
+.卡片 .Github button {
+    background-color: #0d1117;
 }
 
-.卡片 .instagram button {
-    background-color: #ec613d;
+.卡片 .Paypal button {
+    background-color: #0070e0;
 }
-.卡片 .Thread button {
+
+.卡片 .Other button {
     background-color: #333333;
 }
 
 .卡片 button:hover {
     background: #000000;
     transition: 0.5s;
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
-@media screen and (max-width: 1250px) {
-    body {
-        display: block;
-        align-items: center;
-    }
 
-    body .卡片 {
-        margin: 100px auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 10px) {
   /* 手機螢幕以下 */
   body {
     padding: 20px;
   }
 
   .卡片 {
-    width: 150%;
+    width: 90%;
     margin: 20px 0;
   }
 
